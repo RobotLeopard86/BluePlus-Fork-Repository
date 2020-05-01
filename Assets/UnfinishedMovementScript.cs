@@ -6,13 +6,11 @@ public class UnfinishedMovementScript : MonoBehaviour
 {
     private Rigidbody2D playerBody;
     float speed = 0.025f;
-    public int jumpRadius;
+    public int maxJumpRadius = 10;
     // Start is called before the first frame update
     void Start()
     {
        playerBody = GameObject.Find("Player").GetComponent<Rigidbody2D>(); 
-       //Set jump radius here, then message me on Discord the value.
-       //jumpRadius = <your value>;
     }
 
     // Update is called once per frame
